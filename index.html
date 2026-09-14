@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#dcecff" />
+    <meta name="description" content="A very official eye-rolling queue, made especially for Litzy." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="For Litzy" />
+    <title>For Litzy, Obviously</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="paper-grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteMenu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <button class="wordmark" type="button" data-view-target="eye-rolling" aria-label="Go to Eye Rolling">
+        Litzy’s Appointment List App
+      </button>
+
+      <span class="header-flower" aria-hidden="true">✿</span>
+    </header>
+
+    <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+
+    <aside class="site-menu" id="siteMenu" aria-hidden="true">
+      <div class="menu-heading">
+        <p class="menu-name">Litzy's Admin Pannel</p>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <button class="nav-link is-active" type="button" data-view-target="eye-rolling">
+          <span class="nav-number">01</span>
+          <span>Eye Rolling</span>
+        </button>
+        <button class="nav-link" type="button" data-view-target="always-right">
+          <span class="nav-number">02</span>
+          <span>How to Always Be Right</span>
+        </button>
+      </nav>
+
+
+      <p class="menu-note">Handmade with suspiciously good judgment.</p>
+    </aside>
+
+    <main>
+      <section class="view is-visible" id="eye-rolling" aria-labelledby="eyeRollingTitle">
+        <div class="page-shell queue-page">
+          <div class="title-group">
+            <p class="kicker">the very official</p>
+            <h1 id="eyeRollingTitle">Eye Rolling</h1>
+            <p class="title-note">appointment list</p>
+          </div>
+
+          <article class="queue-card" aria-live="polite">
+            <span class="corner-mark corner-mark--left" aria-hidden="true">✦</span>
+            <span class="corner-mark corner-mark--right" aria-hidden="true">✦</span>
+            <p class="queue-label">Currently</p>
+            <p class="queue-number" id="queueNumber">14</p>
+            <p class="queue-caption">are in line</p>
+
+            <div class="queue-divider" aria-hidden="true">
+              <span></span><span class="tiny-flower">✿</span><span></span>
+            </div>
+
+            <p class="queue-status" id="queueStatus">Please wait patiently for your turn.</p>
+          </article>
+
+          <div class="priority-area">
+            <p class="handwritten-note" aria-hidden="true"></p>
+            <button class="priority-button" id="priorityButton" type="button">
+              <span class="button-label">Move Quentin to top of line</span>
+              <span class="button-heart" aria-hidden="true">♡</span>
+            </button>
+            <p class="celebration" id="celebrationMessage" role="status" aria-live="polite"></p>
+          </div>
+
+          <p class="fine-print">Queue times may vary depending on dramatic effect.</p>
+        </div>
+      </section>
+
+      <section class="view" id="always-right" aria-labelledby="alwaysRightTitle" hidden>
+        <div class="page-shell guide-page">
+          <div class="title-group title-group--guide">
+            <p class="kicker">the very official</p>
+            <h1 id="eyeRollingTitle">How To Always Be Right</h1>
+            <p class="title-note">appointment list</p>
+          </div>
+
+                   <article class="queue-card" aria-live="polite">
+            <span class="corner-mark corner-mark--left" aria-hidden="true">✦</span>
+            <span class="corner-mark corner-mark--right" aria-hidden="true">✦</span>
+            <p class="queue-label">Currently</p>
+            <p class="queue-number" id="queueNumber">314</p>
+            <p class="queue-caption">people are in line</p>
+            <p class="queue-caption">*Quentin is not in line</p>
+
+            <div class="queue-divider" aria-hidden="true">
+              <span></span><span class="tiny-flower">✿</span><span></span>
+            </div>
+
+          </article>
+
+          <div class="priority-area">
+            <p class="handwritten-note" aria-hidden="true"></p>
+            <button class="priority-button" id="priorityButton" type="button">
+            </button>
+            <p class="celebration" id="celebrationMessage" role="status" aria-live="polite"></p>
+          </div>
+
+          <p class="fine-print">Queue times may vary depending on dramatic effect.</p>
+
+        </div>
+      </section>
+    </main>
+
+    <noscript>
+      <p class="noscript-message">This tiny website needs JavaScript to manage its very serious queue.</p>
+    </noscript>
+  </body>
+</html>

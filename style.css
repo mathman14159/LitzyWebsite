@@ -146,23 +146,8 @@ body {
   left: 50%;
   top: -6px;
   transform: translateX(-50%);
-  width: 132px;
-  height: 88px;
-
-  background-color: #6b4a2e; /* ANT LER COLOR */
-
-  -webkit-mask-image: var(--art-antlers);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center top;
-
-  mask-image: var(--art-antlers);
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: center top;
-
-  opacity: 0.4;
-  z-index: -1;
+  width: 120px;
+  height: 70px;
 }
 
 .wordmark:focus-visible { color: var(--sky-700); }

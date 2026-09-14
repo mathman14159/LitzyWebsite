@@ -148,10 +148,19 @@ body {
   transform: translateX(-50%);
   width: 132px;
   height: 88px;
-  background-image: var(--art-antlers);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
+
+  background-color: #6b4a2e; /* ANT LER COLOR */
+
+  -webkit-mask-image: var(--art-antlers);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center top;
+
+  mask-image: var(--art-antlers);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center top;
+
   opacity: 0.4;
   z-index: -1;
 }
